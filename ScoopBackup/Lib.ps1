@@ -18,7 +18,7 @@ function Get-Apps([string] $appsDir) {
     $apps = @{}
     Get-ChildItem $appsDir | ForEach-Object {
         $current = "$_\current"
-        $installPath = "$current\install.json"
+        $installPath = "$current\scoop-install.json"
         if (Test-Path $installPath) {
             $install = Get-Content -Raw $installPath | ConvertFrom-Json -AsHashTable
             $apps[$_.name] = @{
