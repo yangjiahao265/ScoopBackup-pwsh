@@ -7,7 +7,7 @@ Scoop backup scripts.
 ## Install
 
 ``` pwsh
-scoop bucket add cologler https://github.com/Cologler/cologler-scoop-bucket
+scoop bucket add cologler https://github.com/yangjiahao265/cologler-scoop-bucket
 scoop install scoop-backup
 ```
 
